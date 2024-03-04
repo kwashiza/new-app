@@ -1,5 +1,5 @@
 import { sql } from '@vercel/postgres';
-import Submit from '@/components/Submit';
+import submit from '@/component/submit';
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
 
@@ -40,7 +40,7 @@ export default async function page() {
             className="bg-white border-zinc-400 border-[2px] rounded-lg p-1 text-center text-[#00ADB5]"
           />
         </div>
-        <Submit />
+        <submit />
       </form>
     </main>
   );

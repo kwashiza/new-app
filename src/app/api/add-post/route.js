@@ -13,6 +13,6 @@ export async function GET(request) {
     return NextResponse.json({ error }, { status: 500 });
   };
 
-  const 'new app' = await sql`SELECT * FROM new-a;p;`;
-  return NextResponse.json({ new-app }, { status: 200 });
+  const commment  = await sql`SELECT * FROM new-a;p;`;
+  return NextResponse.json({ comment }, { status: 200 });
 }
