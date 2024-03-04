@@ -2,7 +2,7 @@ export default function Page() {
     return (
       <div className="flex justify-center">
         <p className="max-w-5xl w-full font-mono text-sm text-justify max-w-prose">
-        A "comment form" is typically an interactive section on a website or platform where users can submit their comments, feedback, or opinions about a particular piece of content. The purpose of a comment form is to facilitate user engagement and interaction by allowing visitors to share their thoughts, ask questions, or contribute to discussions related to the content.
+        A comment form is typically an interactive section on a website or platform where users can submit their comments, feedback, or opinions about a particular piece of content. The purpose of a comment form is to facilitate user engagement and interaction by allowing visitors to share their thoughts, ask questions, or contribute to discussions related to the content.
 
 Key features of a comment form include:
 
