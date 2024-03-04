@@ -2,7 +2,7 @@ import { sql } from '@vercel/postgres';
 import Link from 'next/link';
 
 export default async function Page({ params }) {
-  const result = await sql`SELECT * FROM new-app`;
+  const result = await sql`SELECT * FROM comment`;
 
   const posts = result.rows;
 

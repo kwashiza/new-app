@@ -11,7 +11,7 @@ export default async function page() {
     const username = formData.get('username');
     const post = formData.get('post');
 
-    await sql`INSERT INTO guestbook2 (username, post) VALUES (${username}, ${post})`;
+    await sql`INSERT INTO comment (username, post) VALUES (${username}, ${post})`;
 
     revalidatePath('/posts');
 

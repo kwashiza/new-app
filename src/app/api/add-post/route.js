@@ -8,11 +8,11 @@ export async function GET(request) {
 
   try {
     if (!username || !post) throw new Error('Username and message required');
-    await sql`INSERT INTO new-app (Username, Post) VALUES (${username}, ${post});`;
+    await sql`INSERT INTO comment (Username, Post) VALUES (${username}, ${post});`;
   } catch (error) {
     return NextResponse.json({ error }, { status: 500 });
   };
 
-  const commment  = await sql`SELECT * FROM new-a;p;`;
+  const comment  = await sql`SELECT * FROM comment;`;
   return NextResponse.json({ comment }, { status: 200 });
 }
